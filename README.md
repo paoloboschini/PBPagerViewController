@@ -3,7 +3,7 @@ PBPagerViewController
 
 A Swifty Pager View Controller
 
-![alt tag](https://raw.github.com/paoloboschini/PBPagerViewController/master/file.gif)
+![alt tag](https://raw.github.com/paoloboschini/PBPagerViewController/master/screen.gif)
 
 Basic Usage
 ========
