@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExampleViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ExampleViewController: UIViewController {
 
     @IBOutlet var l1: UILabel!
     @IBOutlet var l2: UILabel!
@@ -36,25 +36,6 @@ class ExampleViewController: UIViewController, UITableViewDelegate, UITableViewD
         l2.text = "\(s2.value)"
         l3.text = "\(s3.value)"
         l4.text = "\(s4.value)"
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
-    }
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell: UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("cell") as? UITableViewCell
-        
-        if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
-        }
-
-        cell.textLabel?.text = "test"
-        return cell
     }
     
     @IBAction func sliderChanged(slider: UISlider) {
